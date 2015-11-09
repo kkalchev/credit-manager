@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="management.view.CreditEditDialogController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Number" />
+      <Label text="Start Date" GridPane.rowIndex="1" />
+      <Label text="Maturity Date" GridPane.rowIndex="2" />
+      <Label text="Term" GridPane.rowIndex="3" />
+      <Label text="Interest Rate" GridPane.rowIndex="4" />
+      <Label text="Credit Amount" GridPane.rowIndex="5" />
+      <TextField fx:id="creditNumberField" GridPane.columnIndex="1" />
+      <TextField fx:id="startDateField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="maturityDateField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="termField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="interestRateField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="loanAmountField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="6">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</GridPane>
